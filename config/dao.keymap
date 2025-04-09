@@ -31,7 +31,7 @@
         base {
             bindings = <
 &kp BSPC      &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y        &kp U        &kp I            &kp O       &kp P          &kp LBKT
-&kp TAB       &mt A LALT  &mt S LGUI  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H        &mt J RSHFT  &mt K RCTRL      &mt RGUI L  &mt SEMI RALT  &kp SQT
+&kp TAB       &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H        &mt RSHFT J  &mt RCTRL K      &mt RGUI L  &mt RALT SEMI  &kp SQT
 &kp LS(LALT)  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N        &kp M        &kp COMMA        &kp DOT     &kp FSLH       &trans
                                       &lt 1 BSPC   &lt 2 ESC     &lt 3 SPACE  &lt 3 SPACE  &lt 4 RET    &mt RSHIFT BSPC
             >;
