@@ -24,19 +24,26 @@
     };
 };
 
-/ {
-    macros {at: at {
-        compatible = "zmk,behavior-macro";
-      
-         #binding-cells = <0>;
-         bindings = <&macro_press>,<&none>,<&macro_release>;
-         label = "AT";};
-    };
+// @  ?  "  &  |   [  :  {   ^  $  #  ~   <  >  ;  '  ,  .  /  }
+// 64 63 34 38 124 91 58 123 94 36 35 126 60 62 59 39 44 46 47 125
 
 / {
-    
-macros {};
-keymap {
+    macros {
+        at: at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N6 &kp KP_N4>
+                , <&macro_release &kp LALT>
+                ;
+            label = "AT";
+        };
+    };
+
+    keymap {
         compatible = "zmk,keymap";
 
         base {
