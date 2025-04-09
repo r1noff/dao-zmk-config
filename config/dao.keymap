@@ -25,77 +25,67 @@
 };
 
 / {
-    macros {
-        at: at {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press   &kp LALT>
-                , <&macro_tap     &kp KP_N6 &kp KP_N4>
-                , <&macro_release &kp LALT>
-                ;
-            label = "AT";
-        };
+    macros {at: at {
+        compatible = "zmk,behavior-macro";
+      
+         #binding-cells = <0>;
+         bindings = <&macro_press>,<&none>,<&macro_release>;
+         label = "AT";};
     };
 
 / {
-    keymap {
+    
+macros {};
+keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-&kp BSPC      &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y        &kp U        &kp I            &kp O       &kp P          &kp LBKT
-&kp TAB       &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H        &mt RSHFT J  &mt RCTRL K      &mt RGUI L  &mt RALT SEMI  &kp SQT
-&kp LS(LALT)  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N        &kp M        &kp COMMA        &kp DOT     &kp FSLH       &trans
-                                      &lt 2 ESC    &lt 3 SPACE   &lt 1 BSPC   &mt RSHIFT BSPC &lt 3 SPACE &lt 4 RET    
-            >;
+&kp BSPC      &kp Q       &kp W       &kp E        &kp R         &kp T       &kp Y        &kp U        &kp I           &kp O       &kp P          &kp LBKT
+&kp TAB       &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G       &kp H        &mt RSHFT J  &mt RCTRL K     &mt RGUI L  &mt RALT SEMI  &kp SQT
+&kp LS(LALT)  &kp Z       &kp X       &kp C        &kp V         &kp B       &kp N        &kp M        &kp COMMA       &kp DOT     &kp FSLH       &trans
+                                      &lt 1 ESC    &lt 2 SPACE   &lt 3 BSPC  &lt 2 SPACE  &lt 4 RET    &mt RSHFT BSPC
+>;
         };
-
-        sys {
-            bindings = <
-&trans  &kp C_AC_CLOSE  &kp LG(LC(LEFT))  &kp LG(UP)      &kp LG(LC(RIGHT))  &kp LC(LA(TAB))  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &kp LG(LEFT)      &kp LG(DOWN)    &kp LG(RIGHT)      &sl 5            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LC(N1))  &kp LA(LC(N2))    &kp LC(LA(N3))  &kp LA(LC(N4))     &kp LA(LC(N5))   &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans          &trans             &trans           &trans  &trans  &trans
-            >;
-        };
-
-        nav {
+nav {
             bindings = <
 &trans  &kp F13  &kp F14          &kp F15        &kp F16  &kp F17  &trans    &kp HOME  &kp END       &trans     &trans  &trans
 &trans  &kp F18  &kp PRINTSCREEN  &trans         &kp F19  &kp F20  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans  &kp F21  &kp F22          &kp C_AC_HOME  &kp F23  &kp F24  &trans    &trans    &kp PG_UP     &kp PG_DN  &trans  &trans
                                   &trans         &trans   &trans   &trans    &trans    &trans
-            >;
+>;
         };
-
-        num {
+num {
             bindings = <
 &trans  &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0     &trans  &trans     &trans     &trans    &trans    &trans
 &trans  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp MINUS  &trans  &kp RSHFT  &kp RCTRL  &kp RGUI  &kp RALT  &trans
 &trans  &kp STAR   &kp N1  &kp N2  &kp N3  &kp FSLH   &trans  &trans     &trans     &trans    &trans    &trans
                            &trans  &trans  &trans     &trans  &trans     &trans
-            >;
+>;
         };
-
-        sym {
+sys {
             bindings = <
-&trans  &kp AT    &kp QMARK  &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET  &kp DLLR   &kp POUND  &kp BSLH  &kp RPAR
+&trans  &kp C_AC_CLOSE  &kp LG(LC(LEFT))  &kp LG(UP)      &kp LG(LC(RIGHT))  &kp LC(LA(TAB))  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &kp LG(LEFT)      &kp LG(DOWN)    &kp LG(RIGHT)      &sl 5            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LC(N1))  &kp LA(LC(N2))    &kp LC(LA(N3))  &kp LA(LC(N4))     &kp LA(LC(N5))   &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans          &trans             &trans           &trans  &trans  &trans
+>;
+        };
+sym {
+            bindings = <
+&trans  &kp AT    &kp QMARK  &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET  &kp DLLR   &kp POUND  &trans    &kp RPAR
 &trans  &kp PLUS  &kp STAR   &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE  &kp MINUS  &kp LT     &kp GT     &kp SEMI  &kp RBKT
 &trans  &trans    &trans     &kp COLON  &kp PRCNT  &kp LBRC  &kp UNDER  &kp SQT    &kp COMMA  &kp DOT    &kp FSLH  &trans
-                             &trans     &trans     &trans    &trans     &trans     &trans
-            >;
+                             &kp BSLH   &trans     &trans    &trans     &trans     &trans
+>;
         };
-
-        win-go {
+win-go {
             bindings = <
 &trans  &trans          &trans          &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans          &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(LG(N1))  &kp LC(LG(N2))  &kp LC(LG(N3))  &kp LC(LG(N4))  &kp LC(LG(N5))  &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans          &trans          &trans          &trans  &trans  &trans
-            >;
+>;
         };
     };
 };
