@@ -29,7 +29,7 @@
 
 / {
     macros {
-        AT: AT {
+        at: at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -39,7 +39,7 @@
                 , <&macro_tap     &kp KP_N6 &kp KP_N4>
                 , <&macro_release &kp LALT>
                 ;
-            label = "AT";
+            label = "at";
         };
     };
 
@@ -80,7 +80,7 @@ sys {
         };
 sym {
             bindings = <
-&trans  &AT       &kp QMARK  &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET  &kp DLLR   &kp POUND  &trans    &kp RPAR
+&trans  &at       &kp QMARK  &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET  &kp DLLR   &kp POUND  &trans    &kp RPAR
 &trans  &kp PLUS  &kp STAR   &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE  &kp MINUS  &kp LT     &kp GT     &kp SEMI  &kp RBKT
 &trans  &trans    &trans     &kp COLON  &kp PRCNT  &kp LBRC  &kp UNDER  &kp SQT    &kp COMMA  &kp DOT    &kp FSLH  &trans
                              &kp BSLH   &trans     &trans    &trans     &trans     &trans
