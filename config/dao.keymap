@@ -51,7 +51,7 @@
 
         num {
             bindings = <
-&trans  &kp KP_EQUAL     &kp N7  &kp N8  &kp N9  &kp N0         &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp EQUAL        &kp N7  &kp N8  &kp N9  &kp N0         &trans  &trans     &trans     &trans    &trans    &trans
 &trans  &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &trans  &kp RSHFT  &kp RCTRL  &kp RGUI  &kp RALT  &trans
 &trans  &kp KP_ASTERISK  &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &trans  &trans     &trans     &trans    &trans    &trans
                                  &trans  &trans  &trans         &trans  &trans     &trans
@@ -69,10 +69,10 @@
 
         sym {
             bindings = <
-&kp GRAVE  &kp AT       &kp QMARK        &kp EXCL   &kp DQT    &kp LPAR  &kp KP_EQUAL  &kp CARET     &kp DLLR   &kp POUND   &trans        &kp RPAR
-&trans     &kp KP_PLUS  &kp KP_ASTERISK  &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE     &kp KP_MINUS  &kp LT     &kp GT      &kp SEMI      &kp RBKT
-&trans     &trans       &trans           &kp COLON  &kp PRCNT  &kp LBRC  &kp UNDER     &kp SQT       &kp COMMA  &kp KP_DOT  &kp KP_SLASH  &kp RBRC
-                                         &kp BSLH   &trans     &trans    &trans        &trans        &trans
+&kp GRAVE  &kp AT       &kp QMARK        &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET     &kp DLLR   &kp POUND   &trans        &kp RPAR
+&trans     &kp KP_PLUS  &kp KP_ASTERISK  &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE  &kp KP_MINUS  &kp LT     &kp GT      &kp SEMI      &kp RBKT
+&trans     &trans       &trans           &kp COLON  &kp PRCNT  &kp LBRC  &kp UNDER  &kp SQT       &kp COMMA  &kp KP_DOT  &kp KP_SLASH  &kp RBRC
+                                         &kp BSLH   &trans     &trans    &trans     &trans        &trans
             >;
         };
 
