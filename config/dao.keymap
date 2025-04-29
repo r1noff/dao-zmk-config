@@ -62,7 +62,7 @@
         sys {
             bindings = <
 &trans  &kp LA(F4)      &kp LG(LC(LEFT))  &kp LG(UP)      &kp LG(LC(RIGHT))  &kp LC(LA(TAB))  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F2          &kp LG(LEFT)      &kp LG(DOWN)    &kp LG(RIGHT)      &sl 7            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F2          &kp LG(LEFT)      &kp LG(DOWN)    &kp LG(RIGHT)      &sl 6            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LA(LC(N1))  &kp LA(LC(N2))    &kp LC(LA(N3))  &kp LA(LC(N4))     &kp LA(LC(N5))   &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans          &trans             &trans           &mo 7   &trans  &trans
             >;
