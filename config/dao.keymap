@@ -43,19 +43,19 @@
 
         nav {
             bindings = <
-&trans  &kp F13  &kp F14          &kp F15        &kp F16  &kp F17  &trans    &kp HOME   &kp END       &trans     &trans  &trans
-&trans  &kp F18  &kp PRINTSCREEN  &trans         &kp F19  &kp F20  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp F21  &kp F22          &kp C_AC_HOME  &kp F23  &kp F24  &trans    &kp PG_UP  &kp PG_DN     &trans     &trans  &trans
-                                  &trans         &trans   &trans   &trans    &trans     &trans
+&trans  &kp F13       &kp F14                &kp F15              &kp F16        &kp F17  &trans    &kp HOME   &kp END       &trans     &trans  &trans
+&trans  &mt LALT F18  &mt LMETA PRINTSCREEN  &mt LCTRL C_AL_MAIL  &mt RSHFT F19  &kp F20  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &kp F21       &kp F22                &kp C_AC_HOME        &kp F23        &kp F24  &trans    &kp PG_UP  &kp PG_DN     &trans     &trans  &trans
+                                             &trans               &trans         &trans   &trans    &trans     &trans
             >;
         };
 
         num {
             bindings = <
-&trans      &kp EQUAL        &kp N7  &kp N8  &kp N9  &kp N0         &trans    &kp HOME        &kp END       &trans          &trans        &trans
-&caps_word  &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &kp LEFT  &mt RSHFT DOWN  &mt RCTRL UP  &mt RGUI RIGHT  &trans        &trans
-&kp KP_DOT  &kp KP_ASTERISK  &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &trans    &kp PG_UP       &kp PG_DN     &kp KP_DOT      &kp KP_SLASH  &trans
-                                     &trans  &trans  &trans         &trans    &mo 5           &trans
+&trans      &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0         &trans    &kp HOME        &kp END       &trans          &trans        &trans
+&caps_word  &mt LALT KP_PLUS  &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &kp LEFT  &mt RSHFT DOWN  &mt RCTRL UP  &mt RGUI RIGHT  &trans        &trans
+&kp KP_DOT  &kp KP_ASTERISK   &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &trans    &kp PG_UP       &kp PG_DN     &kp KP_DOT      &kp KP_SLASH  &trans
+                                      &trans  &trans  &trans         &trans    &mo 5           &trans
             >;
         };
 
