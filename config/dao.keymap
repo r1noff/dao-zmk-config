@@ -52,10 +52,10 @@
 
         nav {
             bindings = <
-&kp LS(RS(RA(LA(RC(RG(LG(LC(DEL))))))))  &kp LS(LA(LC(LG(RA(RS(RC(RG(Q))))))))  &kp LS(LA(LC(LG(RG(RC(RA(RS(W))))))))  &kp LS(LA(LC(LG(RG(RC(RA(RS(E))))))))  &kp LS(RS(RA(LA(LC(RC(RG(LG(R))))))))  &kp LG(RG(RC(LA(RA(LC(LS(RS(T))))))))  &trans    &kp HOME   &kp END       &trans     &trans  &trans
-&kp RS(RA(RC(RG(LG(LC(LA(LS(TAB))))))))  &kp LS(LA(LC(LG(RG(RC(RS(RA(A))))))))  &kp LA(LC(LG(RG(RC(RA(RS(LS(S))))))))  &kp LS(LG(LC(LA(RA(RC(RG(RS(D))))))))  &kp LS(LG(LC(LA(RA(RS(RC(RG(F))))))))  &kp LS(LA(LC(LG(RG(RC(RA(RS(G))))))))  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&kp LS(LA(LC(LG(RS(RA(RC(RGUI)))))))     &kp LS(LA(LC(LG(RG(RC(RA(RS(Z))))))))  &kp LS(LC(LA(RG(LG(RA(RC(RS(X))))))))  &kp RS(RA(RC(RG(LG(LC(LA(LS(C))))))))  &kp RA(RS(RC(LG(LC(RG(LA(LS(V))))))))  &kp LS(RS(RA(LA(LC(RC(RG(LG(B))))))))  &trans    &kp PG_UP  &kp PG_DN     &trans     &trans  &trans
-                                                                                                                       &trans                                 &trans                                 &trans                                 &trans    &trans     &trans
+&kp LS(LA(LG(LC(DEL))))  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LG(LA(LC(LS(T))))  &trans    &kp HOME   &kp END       &trans     &trans  &trans
+&kp LG(LC(LA(LS(TAB))))  &kp LS(LA(LC(LG(A))))  &kp LA(LC(LG(LS(S))))  &kp LS(LG(LC(LA(D))))  &kp LS(LG(LC(LA(F))))  &kp LS(LA(LC(LG(G))))  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&kp LS(LA(LG(LCTRL)))    &kp LS(LA(LC(LG(Z))))  &kp LS(LC(LA(LG(X))))  &kp LG(LC(LA(LS(C))))  &kp LG(LC(LA(LS(V))))  &kp LS(LA(LC(LG(B))))  &trans    &kp PG_UP  &kp PG_DN     &trans     &trans  &trans
+                                                                       &trans                 &trans                 &trans                 &trans    &trans     &trans
             >;
         };
 
