@@ -53,7 +53,7 @@
         nav {
             bindings = <
 &kp LS(LA(LC(DEL)))    &kp LS(LA(LC(Q)))  &kp LS(LA(LC(W)))  &kp LS(LA(LC(E)))  &kp LS(LA(LC(R)))  &kp LA(LC(LS(T)))  &trans    &kp HOME   &kp END       &trans     &trans  &trans
-&kp LC(LA(LS(TAB)))    &kp LS(LA(LC(A)))  &kp LA(LC(LS(S)))  &kp LS(LC(LA(D)))  &kp LS(LC(LA(F)))  &kp LS(LA(LC(G)))  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&kp LC(LA(LS(TAB)))    &kp LS(LA(LC(A)))  &kp LC(LS(S))      &kp LS(LC(LA(D)))  &kp LS(LC(LA(F)))  &kp LS(LA(LC(G)))  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &kp LS(LA(LC(GRAVE)))  &kp LS(LA(LC(Z)))  &kp LS(LC(LA(X)))  &kp LC(LA(LS(C)))  &kp LC(LA(LS(V)))  &kp LS(LA(LC(B)))  &trans    &kp PG_UP  &kp PG_DN     &trans     &trans  &trans
                                                              &trans             &trans             &trans             &trans    &trans     &trans
             >;
