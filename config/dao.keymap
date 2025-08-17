@@ -29,12 +29,26 @@
 // 64 63 34 38 124 91 58 123 94 36 35 126 60 62 59 39 44 46 47 125
 
 / {
-    macros {
-        work_chrome: work_chrome {
-            compatible = "zmk,behavior-macro";
+    behaviors {
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PARENTHESIS";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp O &kp R &kp K &kp SPACE &kp LS(C) &kp H &kp R &kp O &kp M &kp E>;
-            label = "WORK_CHROME";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACKETS";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
+
+        braces: braces {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BRACES";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
     };
 
@@ -62,7 +76,7 @@
         num {
             bindings = <
 &trans      &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0         &trans    &kp HOME        &kp END       &trans          &trans        &trans
-&caps_word  &mt LALT KP_PLUS  &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &kp LEFT  &mt RSHFT DOWN  &mt RCTRL UP  &mt RGUI RIGHT  &trans        &trans
+&caps_word  &mt LALT KP_PLUS  &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &kp LEFT  &mt RSHFT DOWN  &mt RCTRL UP  &mt RGUI RIGHT  &kp RALT      &trans
 &kp KP_DOT  &kp KP_ASTERISK   &kp N1  &kp N2  &kp N3  &kp KP_DIVIDE  &trans    &kp PG_UP       &kp PG_DN     &kp KP_DOT      &kp KP_SLASH  &trans
                                       &trans  &trans  &trans         &trans    &mo 5           &trans
             >;
@@ -79,10 +93,10 @@
 
         sym {
             bindings = <
-&kp GRAVE   &kp AT       &kp QMARK        &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET     &kp DLLR   &kp POUND   &trans        &kp RPAR
-&caps_word  &kp KP_PLUS  &kp KP_ASTERISK  &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE  &kp KP_MINUS  &kp LT     &kp GT      &kp SEMI      &kp RBKT
-&trans      &trans       &trans           &kp COLON  &kp PRCNT  &kp LBRC  &kp UNDER  &kp SQT       &kp COMMA  &kp KP_DOT  &kp KP_SLASH  &kp RBRC
-                                          &kp BSLH   &mo 5      &trans    &trans     &trans        &trans
+&kp GRAVE   &kp AT       &kp QMARK        &kp EXCL   &kp DQT    &parenthesis  &kp EQUAL  &kp CARET     &kp DLLR   &kp POUND   &trans        &kp RPAR
+&caps_word  &kp KP_PLUS  &kp KP_ASTERISK  &kp AMPS   &kp PIPE   &brackets     &kp TILDE  &kp KP_MINUS  &kp LT     &kp GT      &kp SEMI      &kp RBKT
+&trans      &trans       &trans           &kp COLON  &kp PRCNT  &braces       &kp UNDER  &kp SQT       &kp COMMA  &kp KP_DOT  &kp KP_SLASH  &kp RBRC
+                                          &kp BSLH   &mo 5      &trans        &trans     &trans        &trans
             >;
         };
 
