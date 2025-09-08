@@ -102,10 +102,10 @@
 
         sym-rus {
             bindings = <
-&none   &none        &kp LS(N7)       &kp EXCL    &kp LS(N2)  &kp LPAR  &kp EQUAL  &none         &none          &none      &trans        &kp RPAR
-&trans  &kp KP_PLUS  &kp KP_MULTIPLY  &none       &none       &none     &none      &kp KP_MINUS  &none          &none      &kp LS(N4)    &none
-&trans  &trans       &trans           &kp LS(N6)  &kp PRCNT   &none     &kp UNDER  &none         &kp LS(SLASH)  &kp SLASH  &kp KP_SLASH  &none
-                                      &kp BSLH    &trans      &trans    &trans     &trans        &trans
+&none      &none        &kp LS(N7)       &kp EXCL    &kp LS(N2)  &kp LPAR  &kp EQUAL  &none         &none          &none      &trans        &kp RPAR
+&trans     &kp KP_PLUS  &kp KP_MULTIPLY  &none       &none       &none     &none      &kp KP_MINUS  &none          &none      &kp LS(N4)    &none
+&kp SLASH  &trans       &trans           &kp LS(N6)  &kp PRCNT   &none     &kp UNDER  &none         &kp LS(SLASH)  &kp SLASH  &kp KP_SLASH  &none
+                                         &kp BSLH    &trans      &trans    &trans     &trans        &trans
             >;
         };
 
