@@ -32,32 +32,51 @@
     behaviors {
         parenthesis: parenthesis {
             compatible = "zmk,behavior-tap-dance";
-            label = "PARENTHESIS";
+            label = "parenthesis";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
         brackets: brackets {
             compatible = "zmk,behavior-tap-dance";
-            label = "BRACKETS";
+            label = "brackets";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
         braces: braces {
             compatible = "zmk,behavior-tap-dance";
-            label = "BRACES";
+            label = "braces";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        mo_tog: mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tog";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        tog_game {
-            bindings = <&tog 8>;
-            key-positions = <38 36>;
+        mo_tog_game {
+            bindings = <&mo_tog 8 8>;
+            key-positions = <38 37>;
+        };
+
+        mo_tog_debug {
+            bindings = <&mo_tog 9 9>;
+            key-positions = <36 37>;
+        };
+
+        kp_esc_in_game {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
@@ -138,10 +157,19 @@
 
         game {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E    &kp R      &kp T     &kp Y     &kp U      &kp I      &kp O    &kp P     &kp LBKT
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F      &kp G     &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V      &kp B     &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
-                         &kp ESC  &kp SPACE  &kp BSPC  &kp LALT  &kp LMETA  &kp ENTER
+&kp TAB    &kp Q  &kp W  &kp E   &kp R      &kp T     &kp Y     &kp U      &kp I      &kp O    &kp P     &kp LBKT
+&kp LSHFT  &kp A  &kp S  &kp D   &kp F      &kp G     &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C   &kp V      &kp B     &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RBKT
+                         &tog 8  &kp SPACE  &kp BSPC  &kp LALT  &kp LMETA  &kp ENTER
+            >;
+        };
+
+        debug {
+            bindings = <
+&trans  &trans  &trans       &kp LS(F5)  &kp F5   &kp LS(LC(F5))  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(F11)  &kp F11     &kp F10  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans      &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                             &tog 9      &trans   &trans          &trans  &trans  &trans
             >;
         };
     };
