@@ -84,6 +84,7 @@
         compatible = "zmk,keymap";
 
         base {
+	    display-name = "BASE";
             bindings = <
 &kp DEL       &kp Q       &kp W       &kp E        &kp R         &kp T       &kp Y          &kp U        &kp I           &kp O       &kp P          &kp LBKT
 &kp TAB       &mt LALT A  &mt LGUI S  &mt LCTRL D  &mt LSHIFT F  &kp G       &kp H          &mt RSHFT J  &mt RCTRL K     &mt RGUI L  &mt RALT SEMI  &kp SQT
@@ -93,6 +94,7 @@
         };
 
         nav {
+	    display-name = "NAV";
             bindings = <
 &kp LS(LA(LC(DEL)))    &kp LS(LA(LC(Q)))       &kp LS(LA(LC(W)))       &kp LS(LA(LC(E)))        &kp LS(LA(LC(R)))        &kp LA(LC(LS(T)))  &trans    &kp HOME  &kp END       &trans     &trans  &trans
 &kp LC(LA(LS(TAB)))    &mt LALT LS(LA(LC(A)))  &mt LGUI LS(LC(LA(S)))  &mt LCTRL LS(LA(LC(D)))  &mt LSHFT LA(LC(LS(F)))  &kp LS(LA(LC(G)))  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans  &trans
@@ -102,6 +104,7 @@
         };
 
         num {
+	    display-name = "NUM";
             bindings = <
 &trans      &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0         &trans    &kp HOME        &kp END       &trans          &trans        &trans
 &caps_word  &mt LALT KP_PLUS  &kp N4  &kp N5  &kp N6  &kp KP_MINUS   &kp LEFT  &mt RSHFT DOWN  &mt RCTRL UP  &mt RGUI RIGHT  &kp RALT      &trans
@@ -111,6 +114,7 @@
         };
 
         sys {
+	    display-name = "SYS";
             bindings = <
 &trans       &kp LA(F4)      &kp LG(LC(LEFT))  &kp LG(UP)      &kp LG(LC(RIGHT))  &kp LC(LA(TAB))  &kp F1      &kp F2      &kp F3             &kp F4        &kp F5      &kp F6
 &kp LG(TAB)  &kp F2          &kp LG(LEFT)      &kp LG(DOWN)    &kp LG(RIGHT)      &sl 6            &kp F7      &kp F8      &kp F9             &kp F10       &kp F11     &kp F12
@@ -120,6 +124,7 @@
         };
 
         sym {
+	    display-name = "SYM";
             bindings = <
 &kp GRAVE   &kp AT           &kp QMARK        &kp EXCL   &kp DQT    &kp LPAR  &kp EQUAL  &kp CARET     &kp DLLR   &kp POUND   &trans        &kp RPAR
 &caps_word  &kp KP_PLUS      &kp KP_ASTERISK  &kp AMPS   &kp PIPE   &kp LBKT  &kp TILDE  &kp KP_MINUS  &kp LT     &kp GT      &kp SEMI      &kp RBKT
@@ -129,6 +134,7 @@
         };
 
         sym-rus {
+	    display-name = "SYM-RUS";
             bindings = <
 &none      &none        &kp LS(N7)       &kp EXCL    &kp LS(N2)  &kp LPAR  &kp EQUAL  &none         &none          &none      &trans        &kp RPAR
 &trans     &kp KP_PLUS  &kp KP_MULTIPLY  &none       &none       &none     &none      &kp KP_MINUS  &none          &none      &kp LS(N4)    &none
@@ -138,6 +144,7 @@
         };
 
         win-move {
+	    display-name = "WIN-MOVE";
             bindings = <
 &trans  &trans          &kp LS(LG(LEFT))  &trans          &kp LS(LG(RIGHT))  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans            &trans          &trans             &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -156,6 +163,7 @@
         };
 
         game {
+	    display-name = "GAME";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E   &kp R      &kp T     &kp Y     &kp U      &kp I      &kp O    &kp P     &kp LBKT
 &kp LSHFT  &kp A  &kp S  &kp D   &kp F      &kp G     &kp H     &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
@@ -165,6 +173,7 @@
         };
 
         debug {
+	    display-name = "DEBUG";
             bindings = <
 &trans  &trans  &trans       &kp LS(F5)  &kp F5   &kp LS(LC(F5))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LS(F11)  &kp F11     &kp F10  &trans          &trans  &trans  &trans  &trans  &trans  &trans
