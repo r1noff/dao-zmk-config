@@ -1,0 +1,16 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        /* Убедитесь, что имя трансформатора (default_transform) совпадает с тем, что указано в оригинальном dao.dtsi */
+        zmk,matrix-transform = <&default_transform>; 
+    };
+
+    mock_kscan: kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
