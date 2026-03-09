@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: ergonautkb
-      url-base: https://github.com/ergonautkb
     - name: carrefinho
       url-base: https://github.com/carrefinho
   projects:
@@ -11,9 +9,6 @@ manifest:
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
-    - name: ergonautkb-zmk-module
-      remote: ergonautkb
-      revision: main
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
