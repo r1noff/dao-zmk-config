@@ -2,10 +2,10 @@ include:
   - board: dao_left
   - board: dao_right
 
-  - board: xiao_ble//zmk 
+  - board: seeeduino_xiao_ble 
     shield: dao_dongle prospector_adapter
 
   - board: nice_nano_v2
     shield: settings_reset
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
