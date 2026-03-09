@@ -20,7 +20,7 @@
 / {
     chosen {
         zmk,physical_layout = &dao_crkbd_layout;
-
+	zmk,matrix-transform = <&default_transform>;
         // zmk,physical_layout = &dao_full_layout;
     };
 };
