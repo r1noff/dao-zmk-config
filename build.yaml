@@ -1,8 +1,6 @@
 include:
   - board: dao_left
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: dao_right
-    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
   - board: seeeduino_xiao_ble 
     shield: dao_dongle prospector_adapter
