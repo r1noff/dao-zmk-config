@@ -2,14 +2,13 @@ include:
   - board: dao_left
   - board: dao_right
 
-  # Донгл сломан — сборка донгла временно отключена.
-  # Чтобы вернуть донгл (+prospector): раскомментируй строку ниже
-  # и верни CONFIG_ZMK_SPLIT_ROLE_CENTRAL=n в dao_left_defconfig.
-  # - board: seeeduino_xiao_ble
-  #   shield: dao_dongle prospector_adapter
+  - board: seeeduino_xiao_ble
+    shield: dao_dongle prospector_adapter
 
   # Сброс настроек/BLE-бондов для половинок (нужен при смене роли).
   - board: dao_left
     shield: settings_reset
   - board: dao_right
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
     shield: settings_reset

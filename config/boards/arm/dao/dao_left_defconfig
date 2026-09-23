@@ -1,8 +1,7 @@
 # SPDX-License-Identifier: MIT
 
-# Донгл сломан — левая половина снова central (правая = peripheral).
-# Для возврата к донглу поставь обратно =n.
-CONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+# Обе половины — peripheral, central = донгл (dao_dongle).
+CONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
 CONFIG_SOC_SERIES_NRF52X=y
 CONFIG_SOC_NRF52840_QIAA=y
